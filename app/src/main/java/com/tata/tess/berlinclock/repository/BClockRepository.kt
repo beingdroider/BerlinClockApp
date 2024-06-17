@@ -1,4 +1,8 @@
 package com.tata.tess.berlinclock.repository
 
-class BClockRepository {
+import androidx.lifecycle.LiveData
+import com.tata.tess.berlinclock.model.BClock
+
+interface BClockRepository {
+    fun getBClockModelLiveData(): LiveData<BClock>
 }
